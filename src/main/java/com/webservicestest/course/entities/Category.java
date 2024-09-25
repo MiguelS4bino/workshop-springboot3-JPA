@@ -27,7 +27,7 @@ public class Category implements Serializable{
 	
 	@JsonIgnore
 	@ManyToMany(mappedBy = "categories")
-	private Set<Product> producties = new HashSet<>();
+	private Set<Product> products = new HashSet<>();
 	
 	public Category() {
 	}
@@ -54,8 +54,8 @@ public class Category implements Serializable{
 		this.name = name;
 	}
 
-	public Set<Product> getProducties() {
-		return producties;
+	public Set<Product> getproducts() {
+		return products;
 	}
 	
 	@Override
